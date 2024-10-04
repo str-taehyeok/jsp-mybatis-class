@@ -39,10 +39,16 @@
 		}
 	%>
 	
-	<button>상품 삭제</button>
-	
-	<%
-		const button = document.querySelector("button");	
-	%>
+	<a href="update.jsp?id=<%=request.getParameter("id")%>"><button>상품 수정</button></a>
+	<a href="delete?id=<%=request.getParameter("id")%>"><button>상품 삭제</button></a>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
